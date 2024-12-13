@@ -1,0 +1,424 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+*::selection{
+    color:white;
+    background-color: rgb(0, 0, 0);
+}
+#nav{
+    /* background-color: rgb(255, 255, 255); */
+    height:15vh;
+    width:100%;
+    position:fixed;
+    z-index: 9;
+    padding:20px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav #navleft{
+    margin-top:3vh;
+    /* background-color: rgb(255, 255, 255); */
+    height:12vh;
+    overflow: hidden;
+}
+#nav #navleft svg{
+    display: block;
+    
+}
+#nav #navleft #logo{
+    margin-top: 1vh;
+    height: 8vh;
+    
+}
+/* #nav #navleft #logo-link{
+    color: inherit;
+    text-decoration: none;
+    
+} */
+#nav #navright{
+    margin: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav #navright #link{
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+#nav #navright #icon{
+    background-color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    border-radius: 50px;
+    justify-content: space-between;
+    
+}
+#nav #navright #icon #icons{
+    padding:20px;
+    text-decoration: none;
+    color: black;
+}
+#cursor {
+    height: 12vh;
+    width: 6vw;
+    background-color: rgb(196, 187, 176);
+    border-radius: 50%;
+    position: fixed; /* Ensures it moves relative to the viewport */
+    pointer-events: none; 
+    z-index: 2;
+    transform:translate(-50%,-50%) scale(0); 
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+
+#page1{
+    min-height:100vh;
+    background-color: rgb(255, 255, 255);
+    position:relative;
+    width:100%;
+    padding-top: 40vh;
+}
+#page1 h1{
+    font-size: 15vw;
+    text-transform:uppercase;
+    font-family: futura;
+    line-height:14vw;
+    letter-spacing:-1vw;
+}
+#img-container {
+    margin-top: 1vw;
+    height: 100vh;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+#img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+#img-container #play{
+    padding:3vw 2vw;
+    background-color: black;
+    color:#fff;
+    font-family:futura;
+    border-radius: 50%;
+    font-size:1vw;
+    position:fixed;
+    opacity:0;
+    scale:0;
+    transform:translate(-50%,-50%);
+
+}
+#page2 
+{
+    height:100vh;
+    width:100%;
+    position:relative;
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 1vw;
+}
+#page2 .elem{
+    height:100%;
+    width:30%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#page2 .elem img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    scale:1.1;
+
+}
+#page2 .elem .dets{
+    height:50px;
+    width:80%;
+    background-color: rgb(240, 231, 203);
+    z-index:7;
+    position:absolute;
+    border-radius: 20px;
+
+}
+#page2 .elem .dets:hover{
+    height:150px;
+    
+
+}
+#page3
+{
+    min-height:70vh;
+    width:100%;
+    position:relative;
+    
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    align-items: center;
+    
+    background-color: rgb(252, 248, 248);
+}
+#page3 #heading1{
+    height:50vh;
+    width:48vw;
+    background-color: rgb(252, 248, 248);
+    font-size: 3.5vw;
+    text-transform:uppercase;
+    padding:1vw 3vw;
+    font-family: futura;
+    line-height:4vw;
+    letter-spacing:0vw;
+    
+}
+#page3 #heading2{
+    height:50vh;
+    width:48vw;
+    background-color: rgb(252, 248, 248);
+    font-size: 1.1vw;
+    padding: 1vw 13vw;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.5vw;
+    letter-spacing:0;
+    
+}
+
+#page4
+{
+    min-height:200vh;
+    width:100%;
+    position:relative;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.child{
+    height:80vh;
+    width:40vw;
+    margin-top: 3vw;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.child img{
+    
+    height:100%;
+    width:100%;
+    
+}
+
+
+#page5 #heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #000; /* Creates the underline */
+    padding-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#page5 #heading #text{
+    padding: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+#page5 #messageno{
+    height:30vh;
+    /* background-color: red; */
+    margin:1vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: black;
+    
+}
+#page5 #message{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: black;
+    
+}
+#page5 #message #messages{
+    padding:40px;
+    font-family: futura;
+    font-weight: bold;
+    font-size: 20px;
+}
+#page5 #ownmessagelink{
+    height:30vh;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#page5 #ownmessage{
+    /* margin-top: 40vh;
+    margin-left: 33vw;
+    margin-bottom: 40vh; */
+    
+    width:30vw;
+    height:8vh;
+    border-radius: 45px;
+    background-color: #000;
+    text-align: center;
+    justify-content: center;
+    padding: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-transform: uppercase;
+    
+}
+#page5 #ownmessagelink #ownmessage a{
+    text-decoration: none;
+    color: #fff;
+}
+#ownmessagelink #message2{
+    padding: 35px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+@media (max-width:625px) {
+    #page1 h1{
+        padding: 1vh 1vh;
+        font-size: 15vw;
+        line-height:15vw;
+        letter-spacing:-1vw;
+    }
+   
+    #img-container {
+        margin-top: 3vw;
+        height: 50vh; /* Parent container height */
+        padding: 1vh 2vh;
+    }
+    #img-container img {
+        height: 100%; /* Ensure the image adapts to container height */
+        object-fit: cover; /* Maintain aspect ratio while covering */
+    }
+    #page2 
+    {
+        min-height:400vh;
+        
+        flex-direction: column;
+        justify-content: space-between;
+        
+        padding: 2vw 2vw;
+    }
+    #page2 .elem{
+        
+        height:130vh;
+        width:100%;
+        margin-bottom: 4vw;   
+        overflow:hidden; 
+        
+    }
+    #page3
+    {
+        /* flex-direction: column;  */
+        height:70vh;
+        padding:10vw 0vw;
+    }
+    #page3 #heading1{
+        height:20vh;
+        width:100%;
+        
+        font-size: 5vw;
+        text-transform:uppercase;
+        padding:5vw 4vw;
+        font-family: futura;
+        line-height:5vw;
+        letter-spacing:0vw;
+        
+        
+    }
+    #page3 #heading2{
+        height:30vh;
+        width:100%;
+        
+        font-size: 2.3vw;
+        padding: 3vw;
+        line-height:4vw;
+        letter-spacing:0;
+        
+        
+    }
+        
+    #nav #navleft{
+        margin-top:3vh;
+        /* background-color: rgb(192, 27, 27); */
+        height:14vh;
+        overflow: hidden;
+    }
+    #nav #navleft svg{
+        display: block;
+        padding: 1px;
+        
+    }
+    #nav #navleft #logo{
+        margin-top: 1vh;
+        height: 8vh;
+        
+    }
+    
+    
+    #nav #navright #link{
+        display:none;
+        
+    }
+    
+    #page4
+    {
+        min-height:100vh;
+    }
+    .child{
+        height:40vh;
+        width:40vw;       
+    }
+    #page5 #messageno{
+        
+        font-size: 15px;
+        
+        
+    }
+    #page5 #ownmessage{
+        
+        padding-top: 10px;
+        font-size: small;
+        width:50vw;
+        
+    }
+    
+}
